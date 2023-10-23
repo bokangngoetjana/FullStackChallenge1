@@ -1,0 +1,28 @@
+
+h4.subtitle-text{
+   margin: 0;
+}
+.subtitle-icon{
+    width: 40px;
+    height: 4px;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+/*Contains the entire what we need section*/
+.container {
+    width: 100%;
+    padding-right: 15px;
+    margin-right: 80px;
+ }
+ .brand-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .brand-item {
+    width: 256px;
+    height: 120px;
+    margin: 10px;
+    /* Add styling for image and link */
+  }
+  

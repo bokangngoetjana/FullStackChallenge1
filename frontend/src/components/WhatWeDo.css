@@ -1,0 +1,93 @@
+/*What We Do section */
+
+h4.subtitle-text{
+   margin: 0;
+}
+.WhatWeDo{
+    padding: 40px;
+}
+.subtitle-icon{
+    width: 40px;
+    height: 4px;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+/*Contains the entire what we need section*/
+.container {
+    width: 100%;
+    padding-right: 15px;
+    margin-right: 80px;
+ }
+ /*Probably dont need*/
+ .main-titles-head {
+    border-left: 2px solid #8c89a2;
+    padding-left: 20px;
+    margin-bottom: 50px;
+    max-width: 604px; 
+}
+/*Heading 1*/
+.header-section{
+    display: flex;
+    width: 1279px;
+    height: 225px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: left;
+}
+
+.header-text {
+    color: var(--shades-700, #242424);
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 67.2px */
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.call-grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    text-align: left;
+    width: 80%;
+    height: auto;
+}
+.grids-1.grids-effect-2 {
+    align-items: left;
+    margin-bottom: 20px; 
+}
+.icon{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 40px;
+    flex-shrink: 0;
+}
+.heading4{
+    width: 290px;
+    height: 41px;
+    flex-shrink: 0;
+    align-items: left;margin-bottom: 40px;
+    color: #000;
+
+/* heading/is-4 */
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 28.8px */
+}
+.paragraph{
+    width: 290px;
+    height: 212px;
+    color: #000;
+
+    /* body/Regular/20 */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}

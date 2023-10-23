@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Accenture Song - Project Square</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#">Accenture</a></div>
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <a href="#" class="action-btn">Let's Talk</a>
+            </div>
+
+            <div class="dropdown-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services/a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <a href="#" class="action-btn">Let's Talk</a>
+            </div>
+
+        </header>
+
+        <main>
+            <section id="hero">
+                <h1>Welcome</h1>
+                <p>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </section>
+        </main>
+
+        <script>
+            const toggleBtn = document.querySelector('.toggle-btn')
+            const toggleBtnIcon = document.querySelector('.toggle-btn i')
+            const dropDownMenu = document.querySelector('.dropdown-menu')
+
+            toggleBtn.onClick = function(){
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+
+
+    </body>
+</html>

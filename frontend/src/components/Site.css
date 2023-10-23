@@ -1,0 +1,234 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    width: 1280px;
+    height: 80px;
+    padding: 8px 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    background: #70259B;
+    margin: 0 auto;
+  }
+  
+  header{
+    width: 1440px;
+    height: 80px;
+    flex-shrink: 0;
+    background: #70259B;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .logo {
+    width: 100px;
+    height: 30.769px;
+    flex-shrink: 0;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    width: 649px;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .btn-primary{
+    display: flex;
+padding: 10px 20px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 25px;
+background: var(--primary-main, #70259B);
+position: absolute;
+top:70%;
+margin-left: 40px;
+color: var(--shades-white, #FFF);
+
+/* body/Bold/14 */
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 21px */
+  }
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+.action-btn{
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50px;
+    background: var(--shades-white, #fff);
+    color: var(--primary-main, #70259B);
+}
+.new-btn-primary{
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50px;
+    color: var(--shades-white, #fff);
+    background: var(--primary-main, #70259B);
+}
+.action-btn:hover{
+    scale: 1.05;
+    color: #70259B;
+}
+.navbar-menu{
+    display: flex;
+    width: 649px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+} 
+.navbar-menu .btn-primary{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color:#70259B;
+    color: var(--shades-white, #fff);
+    width: 92px;
+    height: 37px;
+
+    border-radius: 20px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150px;
+}
+
+.hero{
+  position: relative;
+}
+.hero-text{
+  position:absolute;
+  top: 40%;
+  color: #fff;
+  padding: 40px;
+  bottom: auto;
+}
+.hero-text h1{
+  margin-bottom: 10px;
+  display: flex;
+    width: 510px;
+    height: 58px;
+    padding-right: 0px;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--shades-100, #FAFAFA);
+
+/* heading/is-1 */
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 67.2px */
+}
+.hero-text p{
+  width: 573.75px;
+height: 50px;
+flex-shrink: 0;
+color: var(--shades-200, #F5F5F5);
+text-align: left;
+/* subtitle/is-5 */
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 30px */
+}
+#hero{
+    padding-bottom: 60px;
+}
+
+/* For screens up to 768px (typical mobile devices) */
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%; /* Full width */
+  }
+
+  .navbar-menu {
+    width: 100%;
+    justify-content: space-around; /* Center items with space between */
+  }
+
+  .btn-primary {
+    margin: 0; /* Remove margin */
+  }
+
+  .hero-text {
+    top: 20%; /* Adjust position of hero text */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .hero-text h1 {
+    width: 100%; /* Full width */
+  }
+
+  .hero-text p {
+    width: 100%; /* Full width */
+  }
+}
+
+/* For screens between 769px and 1024px (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    width: 100%; /* Full width */
+  }
+
+  .navbar-menu {
+    width: 100%;
+  }
+
+  .btn-primary {
+    margin: 0;
+  }
+}
+
+/* For screens between 1025px and 1280px (larger tablets) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .navbar {
+    width: 100%; /* Full width */
+  }
+
+  .navbar-menu {
+    width: 100%;
+  }
+
+  .btn-primary {
+    margin: 0;
+  }
+}
+
+/* For screens above 1280px (standard desktop) */
+@media (min-width: 1281px) {
+  .navbar {
+    width: 1280px; /* Revert to a fixed width */
+  }
+
+  .navbar-menu {
+    width: 649px; /* Revert to the original width */
+  }
+
+  .btn-primary {
+    margin-left: 40px; /* Revert to the original margin */
+  }
+
+  .hero-text {
+    top: 40%; /* Revert to the original position */
+  }
+}

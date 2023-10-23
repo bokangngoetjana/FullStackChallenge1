@@ -1,0 +1,38 @@
+/*Case Studies*/
+
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    margin-right: 80px;
+ }
+#CaseStudy{
+    padding: 5rem;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    width: 100vw;
+}
+.caseStudyInner{
+    height: 300px;
+    background-color: aqua;
+}
+.caseStudyInner h3{
+    text-align: center;
+}
+.caseStudyInner .center{
+    flex: 80%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: justify;
+    text-align-last: center;
+}
+.slick-slide div{
+    margin: 0 1rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
