@@ -1,38 +1,49 @@
 /*Case Studies*/
 
+/*product image*/
+.card-square{
+    flex: 1 0 0;
+    align-self: stretch;
+}
 
-.container {
-    width: 100%;
-    padding-right: 15px;
-    margin-right: 80px;
- }
-#CaseStudy{
-    padding: 5rem;
-    height: 100vh;
-    background-color: #000;
-    color: #fff;
-    width: 100vw;
+.card{
+    display: flex;
+    width: 399px;
+    height: 399px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background: var(--shades-white, #FFF);
+    box-shadow: 0px 8px 16px 0px rgba(54, 54, 54, 0.10);
 }
-.caseStudyInner{
-    height: 300px;
-    background-color: aqua;
+.card p{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+flex-shrink: 0;
+box-shadow: 0px 8px 16px 0px rgba(54, 54, 54, 0.10);
+align-self: stretch;
+color: var(--shades-white, #fff);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+position: absolute;
+top:80%;
+padding-left: 20px;
+margin-bottom: 10px;
+text-align: left;
 }
-.caseStudyInner h3{
-    text-align: center;
-}
-.caseStudyInner .center{
-    flex: 80%;
-    height: 100%;
-    display: grid;
-    place-items: center;
-    text-align: justify;
-    text-align-last: center;
-}
-.slick-slide div{
-    margin: 0 1rem;
-}
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.card-title{
+    color: var(--shades-white, #FFF);
+    position: absolute;
+    top:60%;
+    padding-left: 30px;
+    /* heading/is-3 */
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 38.4px */
 }

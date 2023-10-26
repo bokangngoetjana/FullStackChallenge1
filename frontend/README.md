@@ -27,7 +27,7 @@ This is a React single page application (SPA) build with HTML, CSS, REACT.JS, No
 
 ## Installation
 
-1. Clone this repository: 'https://github.com/bokangngoetjana/FullStackChallenge'
+1. Clone this repository: 'https://github.com/bokangngoetjana/FullStackChallenge1'
 2. Navigate to the project directory 'cd '
 3. Install the dependencies for the frontend and backend
 
