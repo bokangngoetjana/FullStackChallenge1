@@ -1,14 +1,10 @@
-const sql = require('mssql');
+async function connectDB(){
+    try{
+        await sql.connect(config);
+        console.log('Connected to the database');
+    }catch (err){
+        console.error('Database connection error', err);
+    }
+}
 
-const config = {
-    user: '',
-    server: 'BOKANGN//SQLEXPRESS',
-    database: 'Brands',
-    
-};
-
-const pool = new sql.ConnectionPool(config);
-
-pool.connect().then((pool) => {
-    console.log('Connected to SQL Server');
-});
+connectDB();
