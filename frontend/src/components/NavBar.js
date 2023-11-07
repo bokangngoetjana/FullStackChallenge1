@@ -1,12 +1,8 @@
-// Navbar.js (React Component)
 import React from 'react';
 import logo from './assets/logo.svg';
 
-//Functional Component
-function Navbar() {
-
-  //Component Return: specifies the structure and content of the component that
- // will be rendered on the user interface 
+function Navbar() 
+{
   return (
 
     <header>
