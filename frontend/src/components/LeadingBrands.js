@@ -4,9 +4,10 @@ import axios from 'axios';
 
 function LeadingBrands() {
     const [ImageUrls, setImageUrls] = useState([]);
+    const baseUrl = '/assets/';
 
     useEffect(() => {
-        axios.get('./assets/')
+        axios.get('/api/assets/')
             .then(response => {
                 setImageUrls(response.data);
             })
@@ -26,7 +27,7 @@ function LeadingBrands() {
                 </div>
                 {/* Render your images using the imageUrls state */}
                 {ImageUrls.map((ImageUrl, index) => (
-                    <img key={index} src={ImageUrl} alt={`Brand ${index}`} />
+                    <img key={index} src={'${baseUrl}${ImageUrl}'} alt={`Brand ${index}`} />
                 ))}
             </div>
         </section>
